@@ -1,0 +1,1 @@
+notes for setting up webpage at aspenlin.com
