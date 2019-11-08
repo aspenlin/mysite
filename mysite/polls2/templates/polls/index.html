@@ -1,0 +1,9 @@
+{% if latest_title_list %}
+    <ul>
+    {% for title in latest_title_list %}
+        <li><a href="{% url 'blogs:detail' title.id %}/">{{ title.title_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No blogs are available.</p>
+{% endif %}
