@@ -1,0 +1,34 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+<link rel="stylesheet", href="{%static 'tinymce/css/prism.css' %}">
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<body>
+
+<nav>
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo right">Logo</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a href="/">Detail</a></li>
+        <li><a href="/results">Results</a></li>
+        <li><a href="/login">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+{% block content %}
+{% endblock %}
+
+</body>
+
+
+
+
+
+<script src="{%static 'tinymce/js/prism.js' %}">
+</script>
