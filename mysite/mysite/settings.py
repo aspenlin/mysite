@@ -25,7 +25,7 @@ SECRET_KEY = '&ushvyemytn2b@fgji_m9i+%_#^&$wx=d%566zhur**j5nhd$k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['aspenlin.com','localhost']
+ALLOWED_HOSTS = ['www.aspenlin.com','aspenlin.com','34.70.11.122']
 
 TINYMCE_DEFAULT_CONFIG = {
     'height': 360,
@@ -59,6 +59,7 @@ TINYMCE_DEFAULT_CONFIG = {
 # Application definition
 INSTALLED_APPS = [
     'polls.apps.PollsConfig',
+    'main.apps.MainConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -149,5 +150,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 STATICFILES_DIRS = ['/home/joejoeustc/mysite/mysite/polls/static/',
 ]

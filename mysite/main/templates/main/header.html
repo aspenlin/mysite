@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Jingjing Lin's website</title>
+	<!-- <link rel="stylesheet", href="{%static 'tinymce/css/prism.css' %}">
+	<link rel="stylesheet", href="{%static 'materialize/css/materialize.css' %}"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+   <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+	<link rel="shortcut icon" href="{% static 'main/image/favicon.ico' type='image/x-icon' %}">
+	</head>
+
+	<body style='min-height: 100%;'>
+		<nav>
+		    <div class="nav-wrapper container" style="width: 92%; font-family: cursive;">
+		      <a href="/" class="brand-logo right">JingjingLin</a>
+		      <ul id="nav-mobile">
+		      	<li><a href="/">About me</a></li>
+		      	<li><a href="/cv/">CV</a></li>
+		      	<li><a href="/blogs/">Blogs</a></li>
+		        <li><a href="/photos/">PhotoGallery</a></li>
+		        <li><a href="/calligraphy/">ChineseCalligraphy</a></li>
+		      </ul>
+		    </div>
+		</nav>
+		
+
+		{% block content %}
+		{% endblock %}
+
+		<!-- to leave space above footer -->
+		<div style="margin-top: 25%"></div>
+
+		<footer class="page-footer" style="position:flex;bottom:0;top:500px;left:0;width:100%; font-family: cursive;">
+		  <div class="container">
+		    <div class="row">
+		      <div class="col l6 s12">
+		        <h5 class="white-text">You've reached the end!</h5>
+		        <!-- <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p> -->
+		      </div>
+		      <div class="col l4 offset-l2 s12">
+		        <h5 class="white-text">Links</h5>
+		        <ul>
+		          <li><a class="grey-text text-lighten-3" href="https://github.com/aspenlin">My Github</a></li>
+		          <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/jingjing-lin-4a6018170/">My LinkedIn</a></li>
+		          <li><a class="grey-text text-lighten-3" href="http://www.shufajianghu.com/">书法江湖</a></li>
+		        </ul>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="footer-copyright">
+		    <div class="container">
+		    © 2019 Copyright All right reserved
+		    </div>
+		  </div>
+		</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+	</body>
+
+	<!-- <link rel="stylesheet", href="{%static 'materialize/js/materialize.js' %}">
+	<script src="{%static 'tinymce/js/prism.js' %}"></script> -->
+
+
+</html>
+
+
+
+

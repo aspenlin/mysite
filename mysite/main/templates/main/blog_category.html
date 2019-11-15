@@ -1,0 +1,21 @@
+{% extends 'main/header.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        {% for blog in blogs %}
+            <div class="col s12 m6 l4">
+                <div class="card hoverable">
+                    <div class="card-content">
+                        <div class="card-title">{{blog.title}}</div>
+                        <a href="/blogs/{{category}}/{{blog.id}}">Read More</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+{% endblock %}
+

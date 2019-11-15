@@ -1,0 +1,11 @@
+{% extends 'main/header.html' %}
+
+{% block content %}
+   <h3 class="center-align">{{blog.title}}</h3>
+   <p class="grey-text center-align">{{blog.pub_date}}</p>
+   <div class="container">
+   	  <p class="grey-text center-align"> {{blog.content | safe}} </p>
+   </div>
+       
+{% endblock %}
+

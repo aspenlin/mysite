@@ -1,0 +1,21 @@
+{% extends 'main/header.html' %}
+{% load static %}
+{% block content %}
+<div class="container ">
+
+        <div class="row card">
+            {% for p in photos %}
+            <div class="col s12 m6 l4">
+                
+
+                <img src="{{ MEDIA_ROOT }}{{ p.photo.url }}" class="materialboxed responsive-img card">
+
+            </div>
+            {% endfor %}
+            
+        </div>
+
+    </div>
+
+    
+{% endblock %}

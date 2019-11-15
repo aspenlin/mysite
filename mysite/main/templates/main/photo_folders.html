@@ -1,0 +1,21 @@
+{% extends 'main/header.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        {% for y in folders %}
+            <div class="col s12 m6 l4">
+                <a href="/photos/{{y}}", style="color:#000">
+                    <div class="card hoverable">
+                        <div class="card-content">
+                            <div class="card-title">{{y}}</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+    
+{% endblock %}
