@@ -10,19 +10,30 @@
    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
 	<link rel="shortcut icon" href="{% static 'main/image/favicon.ico' type='image/x-icon' %}">
+	<!-- <style type="text/css">
+		body{
+			font-family: cursive;
+		}
+		
+	</style> -->
 	</head>
 
 	<body style='min-height: 100%;'>
 		<nav>
 		    <div class="nav-wrapper container" style="width: 92%; font-family: cursive;">
-		      <a href="/" class="brand-logo right">JingjingLin</a>
-		      <ul id="nav-mobile">
-		      	<li><a href="/">About me</a></li>
-		      	<li><a href="/cv/">CV</a></li>
-		      	<li><a href="/blogs/">Blogs</a></li>
-		        <li><a href="/photos/">PhotoGallery</a></li>
-		        <li><a href="/calligraphy/">ChineseCalligraphy</a></li>
-		      </ul>
+		        <a href="/" class="brand-logo right">JingjingLin</a>
+		        <ul id="nav-mobile">
+		      		<li><a href="/">About me</a></li>
+		      		<li><a href="/cv/">CV</a></li>
+		      		<li><a href="/blogs/">Blogs</a></li>
+		        	<li><a href="/photos/">PhotoGallery</a></li>
+		        	<li><a href="/calligraphy/">ChineseCalligraphy</a></li>
+		        </ul>
+		        <audio controls loop style="width: 15%" >
+		        	<source src="{% static 'main/music/love-is-just-a-dream.mp3' %}" type="audio/mpeg">
+		        	Your browser does not support audio.
+			    </audio>
+		        
 		    </div>
 		</nav>
 		

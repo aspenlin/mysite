@@ -9,7 +9,7 @@ def home(request):
 	return render(request, 'main/index.html')
 
 def cv(request):
-    return FileResponse(open('static/main/pdf/JingjingLin_Resume_V3.pdf', 'rb'), content_type='application/pdf')
+    return FileResponse(open('static/main/pdf/JingjingLin_5.pdf', 'rb'), content_type='application/pdf')
 
 def blog(request):
     context = {'categories':BlogCategory.objects.all}
